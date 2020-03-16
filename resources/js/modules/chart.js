@@ -9,6 +9,7 @@ import Svg from "./chart/svg";
 import Person from "./chart/svg/person";
 import Gradient from "./chart/gradient";
 import Update from "./chart/update";
+import Export from "./chart/svg/export";
 
 const MIN_HEIGHT  = 500;
 const MIN_PADDING = 10;   // Minimum padding around view box
@@ -161,6 +162,10 @@ export default class Chart
 
         this.bindClickEventListener();
         this.updateViewBox();
+
+
+        let _export = new Export(this._svg.get().node(), this._svg.visual.node());
+        _export.svgToImage(); //, this.config.width, this.config.height);
     }
 
     /**

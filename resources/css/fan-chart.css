@@ -115,7 +115,7 @@
 }
 
 #page-fan svg .label .date {
-    fill: #7f7f7f;
+    fill: rgb(127, 127, 127);
     font-weight: normal;
     direction: ltr;
     unicode-bidi: plaintext;
@@ -145,7 +145,7 @@
 
 #page-fan div.overlay .tooltip {
     font-size: 22px;
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
     margin: 0;
     top: 50%;
